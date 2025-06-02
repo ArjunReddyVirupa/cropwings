@@ -3,7 +3,7 @@ import FarmerImg from "../../assets/FarmerImg.png";
 
 export default function Farmer() {
   return (
-    <div className="grid grid-flow-row sm:grid-flow-col items-center gap-16 justify-center px-16">
+    <div className="grid grid-flow-row sm:grid-flow-col items-center gap-16 justify-center px-8 mt-4 mb-4 sm:mt-0 sm:mb-0">
       <motion.img
         src={FarmerImg}
         alt="farmer"

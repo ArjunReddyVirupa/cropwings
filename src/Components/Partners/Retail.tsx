@@ -3,7 +3,7 @@ import PilotImg from "../../assets/Pilot.png";
 
 export default function Retail() {
   return (
-    <div className="grid grid-flow-row sm:grid-flow-col gap-4 justify-center px-16">
+    <div className="grid grid-flow-row sm:grid-flow-col gap-4 justify-center px-8 mt-4 mb-4 sm:mt-0 sm:mb-0">
       <motion.img
         src={PilotImg}
         alt="drone-service"
