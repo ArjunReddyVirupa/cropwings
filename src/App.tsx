@@ -106,9 +106,19 @@ export default function App() {
       <div className="sticky h-fit w-full snap-start top-[-40%] rounded-t-3xl bg-white before:absolute before:-bottom-12 before:left-0 before:h-14 before:w-full before:bg-white sm:hidden">
         <div className="pointer-events-none absolute left-0 top-0 z-50 h-[calc(100%+40px)] w-full rounded-t-[23px] bg-slate-800 opacity-0 transition-opacity duration-300 ease-out will-change-[opactiy]"></div>
         <div className="flex flex-col gap-4 p-4">
-          <ImageOverlayCard imgSrc={Acres} label="1 Lakh+" value="Acres" />
-          <ImageOverlayCard imgSrc={Partners} label="500+" value="Partners" />
-          <ImageOverlayCard imgSrc={States} label="8" value="States" />
+          <ImageOverlayCard
+            imgSrc={Acres}
+            label="Acres"
+            end={100000}
+            suffix="+"
+          />
+          <ImageOverlayCard
+            imgSrc={Partners}
+            label="Partners"
+            end={500}
+            suffix="+"
+          />
+          <ImageOverlayCard imgSrc={States} label="States" end={8} />
         </div>
       </div>
       <div className="sticky h-fit w-full snap-start top-[-40%] rounded-t-3xl bg-white before:absolute before:-bottom-12 before:left-0 before:h-14 before:w-full before:bg-white sm:hidden">
@@ -394,9 +404,19 @@ export default function App() {
             </div>
           </div>
           <div className="flex w-full m-auto align-center justify-center gap-4 mt-10">
-            <ImageOverlayCard imgSrc={Acres} label="1 Lakh+" value="Acres" />
-            <ImageOverlayCard imgSrc={Partners} label="500+" value="Partners" />
-            <ImageOverlayCard imgSrc={States} label="8" value="States" />
+            <ImageOverlayCard
+              imgSrc={Acres}
+              end={100000}
+              suffix="+"
+              label="Acres"
+            />
+            <ImageOverlayCard
+              imgSrc={Partners}
+              end={500}
+              suffix="+"
+              label="Partners"
+            />
+            <ImageOverlayCard imgSrc={States} end={8} label="States" />
           </div>
         </div>
 
