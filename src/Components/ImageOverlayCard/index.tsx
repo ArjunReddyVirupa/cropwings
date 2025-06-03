@@ -13,7 +13,7 @@ const ImageOverlayCard = ({
   suffix?: string;
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.9 });
   const controls = useAnimation();
   const [count, setCount] = useState(0);
 
