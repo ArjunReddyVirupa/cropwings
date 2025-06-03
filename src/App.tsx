@@ -19,6 +19,7 @@ import {
 } from "./Components";
 import States from "./assets/States.png";
 import Acres from "./assets/Acres.png";
+import Partners from "./assets/Partners.png";
 import Profitability from "./assets/Profitability.png";
 import TSEffeciancy from "./assets/TSEffeciancy.png";
 import OrderDetail from "./assets/OrderDetails.jpg";
@@ -70,7 +71,7 @@ export default function App() {
                 loop
                 playsInline
                 muted
-                preload="auto"
+                preload="metadata"
                 style={{ overflowClipMargin: "content-box" }}
               ></video>
             </div>
@@ -106,28 +107,28 @@ export default function App() {
         <div className="pointer-events-none absolute left-0 top-0 z-50 h-[calc(100%+40px)] w-full rounded-t-[23px] bg-slate-800 opacity-0 transition-opacity duration-300 ease-out will-change-[opactiy]"></div>
         <div className="flex flex-col gap-4 p-4">
           <ImageOverlayCard imgSrc={Acres} label="1 Lakh+" value="Acres" />
-          <ImageOverlayCard imgSrc={Acres} label="500+" value="Partners" />
+          <ImageOverlayCard imgSrc={Partners} label="500+" value="Partners" />
           <ImageOverlayCard imgSrc={States} label="8" value="States" />
         </div>
       </div>
       <div className="sticky h-fit w-full snap-start top-[-40%] rounded-t-3xl bg-white before:absolute before:-bottom-12 before:left-0 before:h-14 before:w-full before:bg-white sm:hidden">
         <div className="rounded-t-3xl bg-white sm:hidden">
-          <div className="flex w-full justify-center overflow-hidden rounded-t-3xl bg-gradient-to-t from-[#FFF] to-[#d5e8ce]">
+          <div className="flex flex-col w-full justify-center overflow-hidden rounded-t-3xl bg-gradient-to-t from-[#FFF] to-[#d5e8ce]">
             <Farmer />
           </div>
         </div>
       </div>
       <div className="sticky h-fit w-full snap-start top-[-40%] rounded-t-3xl bg-white before:absolute before:-bottom-12 before:left-0 before:h-14 before:w-full before:bg-white sm:hidden">
         <div className="rounded-t-3xl bg-white sm:hidden">
-          <div className="flex w-full justify-center overflow-hidden rounded-t-3xl bg-gradient-to-t from-[#FFF] to-[#d5e8ce]">
-            <Partner />
+          <div className="flex flex-col w-full justify-center overflow-hidden rounded-t-3xl bg-gradient-to-t from-[#FFF] to-[#d5e8ce]">
+            <Retail />
           </div>
         </div>
       </div>
       <div className="sticky h-fit w-full snap-start top-[-40%] rounded-t-3xl bg-white before:absolute before:-bottom-12 before:left-0 before:h-14 before:w-full before:bg-white sm:hidden">
         <div className="rounded-t-3xl bg-white sm:hidden">
-          <div className="flex w-full justify-center overflow-hidden rounded-t-3xl bg-gradient-to-t from-[#FFF] to-[#d5e8ce]">
-            <Retail />
+          <div className="flex flex-col w-full justify-center overflow-hidden rounded-t-3xl bg-gradient-to-t from-[#FFF] to-[#d5e8ce]">
+            <Partner />
           </div>
         </div>
       </div>
@@ -178,6 +179,7 @@ export default function App() {
           <footer className="px-5 pt-4   text-white lg:mx-auto lg:max-w-[834px] xl:max-w-[949px] lg:pt-20 ">
             <div className="flex w-full items-center justify-start py-6 ">
               <img
+                loading="eager"
                 className="h-8 lg:h-9"
                 src="https://www.cropwings.com/_next/image?url=%2Fwhite.png&w=384&q=75"
                 alt="Cropwings Logo"
@@ -309,7 +311,7 @@ export default function App() {
                 loop
                 playsInline
                 muted
-                preload="auto"
+                preload="metadata"
                 style={{ overflowClipMargin: "content-box" }}
               />
             </div>
@@ -370,6 +372,7 @@ export default function App() {
               src={OrderDetail}
               height={100}
               width={200}
+              loading="eager"
               alt="mobile-app-ui"
             />
             <img src={NewOrder} height={100} width={200} alt="mobile-app-ui" />
@@ -379,18 +382,20 @@ export default function App() {
                 width={300}
                 height={250}
                 alt="profitability"
+                loading="eager"
               />
               <img
                 src={TSEffeciancy}
                 alt="transport"
                 width={300}
                 height={250}
+                loading="eager"
               />
             </div>
           </div>
           <div className="flex w-full m-auto align-center justify-center gap-4 mt-10">
             <ImageOverlayCard imgSrc={Acres} label="1 Lakh+" value="Acres" />
-            <ImageOverlayCard imgSrc={Acres} label="500+" value="Partners" />
+            <ImageOverlayCard imgSrc={Partners} label="500+" value="Partners" />
             <ImageOverlayCard imgSrc={States} label="8" value="States" />
           </div>
         </div>
@@ -406,12 +411,65 @@ export default function App() {
             visible: { transition: { staggerChildren: 0.3 } },
             hidden: {},
           }}
-          className="relative pt-20 pb-20 mt-7 xl:mt-16 xl:pt-28 2xl:pt-36 2xl:mt-24 flex w-full flex-col items-center gap-16"
+          className="relative px-4 pt-8 pb-20 mt-4 xl:mt-8 xl:pt-8 2xl:pt-20 2xl:mt-12 flex w-full flex-col items-center gap-16"
         >
-          <Farmer />
-          <div className="flex">
-            <Partner />
-            <Retail />
+          <div
+            style={{
+              borderRadius: "45px",
+              // padding: "20px",
+              background:
+                "linear-gradient(rgb(213, 232, 206) 0%, rgb(16, 109, 32) 100%)",
+            }}
+          >
+            <div
+              style={{
+                borderRadius: "40px",
+                margin: "8px",
+                background:
+                  "linear-gradient(80deg, rgb(255, 255, 255) 0%, rgb(213, 232, 206) 100%)",
+              }}
+            >
+              <Farmer />
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:gap-4 gap-4">
+            <div
+              style={{
+                borderRadius: "45px",
+                background:
+                  "linear-gradient(rgb(213, 232, 206) 0%, rgb(16, 109, 32) 100%)",
+              }}
+            >
+              <div
+                style={{
+                  borderRadius: "40px",
+                  margin: "8px",
+                  background:
+                    "linear-gradient(89deg, rgb(213, 232, 206) 0%, rgb(255, 255, 255) 50%)",
+                }}
+              >
+                <Partner />
+              </div>
+            </div>
+            <div
+              style={{
+                borderRadius: "45px",
+                background:
+                  "linear-gradient(rgb(213, 232, 206) 0%, rgb(16, 109, 32) 100%)",
+              }}
+            >
+              <div
+                style={{
+                  borderRadius: "40px",
+                  margin: "8px",
+                  background:
+                    "linear-gradient(89deg, rgb(213, 232, 206) 0%, rgb(255, 255, 255) 50%)",
+                }}
+              >
+                <Retail />
+              </div>
+            </div>
           </div>
         </motion.div>
         <div className="relative ">
@@ -461,7 +519,7 @@ export default function App() {
                   className="relative z-50 w-1/2 lg:max-w-[348px] xl:max-w-[454px]"
                 >
                   <div className="size-full">
-                    <img src={MobilePhone} loading="lazy" />
+                    <img src={MobilePhone} loading="lazy" alt="mobile-phone" />
                   </div>
                   <div className="absolute left-0 top-[-60px] flex size-full flex-col items-center justify-end gap-5">
                     <div className="w-[60%] text-center text-xs font-medium text-comet md:text-sm lg:w-3/5 lg:text-base xl:text-xl">
@@ -495,6 +553,7 @@ export default function App() {
                 className="h-8 lg:h-9"
                 src="https://www.cropwings.com/_next/image?url=%2Fwhite.png&w=384&q=75"
                 alt="Cropwings Logo"
+                loading="eager"
               />
             </div>
             <div className="py-6">

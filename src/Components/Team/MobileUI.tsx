@@ -74,6 +74,7 @@ export const MobileUI: React.FC<AnimatedTestimonialsProps> = ({
                 <img
                   src={testimonial.src}
                   alt={testimonial.name}
+                  loading="eager"
                   className="h-full w-full rounded-3xl object-cover object-center shadow-lg"
                 />
               </motion.div>

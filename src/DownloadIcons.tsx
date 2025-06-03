@@ -9,7 +9,7 @@ export default function DownloadIcons() {
         target="_blank"
         className="z-50 hover:text-white hover:no-underline bg-black size-fit transition-transform duration-200 hover:scale-110 text-white flex rounded-lg w-fit py-[4px] px-[8px] gap-2 border-gray-400 border border-solid"
       >
-        <img src={Apple} alt="" width={30} height={30} />
+        <img src={Apple} alt="" width={30} height={30} loading="eager" />
         <div className="flex flex-col font-light" style={{ fontSize: "11px" }}>
           Download on the <span className="text-sm font-bold">App Store</span>
         </div>
@@ -19,7 +19,7 @@ export default function DownloadIcons() {
         target="_blank"
         className="z-50 hover:text-white hover:no-underline bg-black size-fit transition-transform duration-200 hover:scale-110 text-white flex rounded-lg w-fit py-[4px] px-[8px] gap-2 border-gray-400 border border-solid"
       >
-        <img src={GooglePlay} alt="" width={30} height={30} />
+        <img src={GooglePlay} alt="" width={30} height={30} loading="eager" />
         <div className="flex flex-col font-light" style={{ fontSize: "11px" }}>
           GET IT ON <span className="text-sm font-bold">Google Play</span>
         </div>

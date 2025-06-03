@@ -13,6 +13,7 @@ const ImageOverlayCard = ({
         className="w-full h-72 object-cover"
         src={imgSrc}
         alt="Card background"
+        loading="eager"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
       <div className="absolute inset-0 flex flex-col justify-end p-4 text-white z-10">

@@ -62,6 +62,7 @@ const Team = () => {
                 <img
                   src={image.src}
                   alt={`img-${index}`}
+                  loading="eager"
                   className="w-full h-full object-cover"
                 />
 
