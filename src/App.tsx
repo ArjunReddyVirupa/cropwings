@@ -223,7 +223,7 @@ export default function App() {
                   <div className="flex w-full flex-col items-start justify-start gap-2 text-xs lg:text-base">
                     <div className="hover:text-zSlate300">
                       <a
-                        href="https://app.cropwings.com/common/privacypolicy"
+                        href="https://app.cropwings.com/privacypolicy"
                         target="_blank"
                         className=""
                       >
@@ -232,7 +232,7 @@ export default function App() {
                     </div>
                     <div className="hover:text-zSlate300">
                       <a
-                        href="https://app.cropwings.com/common/tos"
+                        href="https://app.cropwings.com/tos"
                         target="_blank"
                         className=""
                       >
@@ -248,7 +248,7 @@ export default function App() {
                         Help &amp; Support
                       </a>
                     </div>
-                    <div className="hover:text-zSlate300">
+                    {/* <div className="hover:text-zSlate300">
                       <a
                         href="https://blog.zomato.com/"
                         target="_blank"
@@ -256,7 +256,7 @@ export default function App() {
                       >
                         Blog
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="order-3 h-fit lg:order-5">
@@ -566,7 +566,7 @@ export default function App() {
                   <div className="flex w-full flex-col items-start justify-start gap-2 text-xs lg:text-base">
                     <div>
                       <a
-                        href="https://app.cropwings.com/common/privacypolicy"
+                        href="https://app.cropwings.com/privacypolicy"
                         target="_blank"
                         className="hover:text-white hover:no-underline"
                       >
@@ -575,7 +575,7 @@ export default function App() {
                     </div>
                     <div>
                       <a
-                        href="https://app.cropwings.com/common/tos"
+                        href="https://app.cropwings.com/tos"
                         target="_blank"
                         className="hover:text-white hover:no-underline"
                       >
@@ -591,7 +591,7 @@ export default function App() {
                         Help &amp; Support
                       </a>
                     </div>
-                    <div>
+                    {/* <div>
                       <a
                         href="https://blog.zomato.com/"
                         target="_blank"
@@ -599,7 +599,7 @@ export default function App() {
                       >
                         Blog
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="order-3 h-fit lg:order-5">
