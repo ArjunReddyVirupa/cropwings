@@ -20,10 +20,7 @@ import {
 import States from "./assets/States.png";
 import Acres from "./assets/Acres.png";
 import Partners from "./assets/Partners.png";
-import Profitability from "./assets/Profitability.png";
-import TSEffeciancy from "./assets/TSEffeciancy.png";
-import OrderDetail from "./assets/OrderDetails.jpg";
-import NewOrder from "./assets/New Order.jpg";
+import AppScreenshots from "./Components/AppScreenshots";
 
 export default function App() {
   const ref = useRef(null);
@@ -106,19 +103,7 @@ export default function App() {
       <div className="sticky h-fit w-full snap-start top-[-40%] rounded-t-3xl bg-white before:absolute before:-bottom-12 before:left-0 before:h-14 before:w-full before:bg-white sm:hidden">
         <div className="pointer-events-none absolute left-0 top-0 z-50 h-[calc(100%+40px)] w-full rounded-t-[23px] bg-slate-800 opacity-0 transition-opacity duration-300 ease-out will-change-[opactiy]"></div>
         <div className="flex flex-col gap-4 p-4">
-          <ImageOverlayCard
-            imgSrc={Acres}
-            label="Acres"
-            end={100000}
-            suffix="+"
-          />
-          <ImageOverlayCard
-            imgSrc={Partners}
-            label="Partners"
-            end={500}
-            suffix="+"
-          />
-          <ImageOverlayCard imgSrc={States} label="States" end={8} />
+          <AppScreenshots />
         </div>
       </div>
       <div className="sticky h-fit w-full snap-start top-[-40%] rounded-t-3xl bg-white before:absolute before:-bottom-12 before:left-0 before:h-14 before:w-full before:bg-white sm:hidden">
@@ -362,61 +347,23 @@ export default function App() {
           </div>
         </div>
         <div className="overflow-hidden bg-white m-4" id="scroll-section">
-          <div className="w-full flex align-center justify-center gap-16">
-            <div className="flex bg-[#d5e8ce] overflow-hidden justify-between box-border rounded-md">
-              <div className="p-12">
-                <div className="mt-12 text-3xl">
-                  Book your drone in three clicks
-                </div>
-                <div
-                  onClick={() => {
-                    window.open("https://app.cropwings.com/qr", "_blank");
-                  }}
-                  className="bg-[#106d20] cursor-pointer w-fit py-2 px-4 rounded-md text-white mt-24"
-                >
-                  Book Now
-                </div>
-              </div>
-            </div>
-            <img
-              src={OrderDetail}
-              height={100}
-              width={200}
-              loading="eager"
-              alt="mobile-app-ui"
-            />
-            <img src={NewOrder} height={100} width={200} alt="mobile-app-ui" />
-            <div className="flex flex-col gap-4">
-              <img
-                src={Profitability}
-                width={300}
-                height={250}
-                alt="profitability"
-                loading="eager"
+          <div className="flex flex-col w-full m-auto align-center justify-center gap-4 mt-4">
+            <AppScreenshots />
+            <div className="flex justify-between mt-4">
+              <ImageOverlayCard
+                imgSrc={Acres}
+                end={100000}
+                suffix="+"
+                label="Acres"
               />
-              <img
-                src={TSEffeciancy}
-                alt="transport"
-                width={300}
-                height={250}
-                loading="eager"
+              <ImageOverlayCard
+                imgSrc={Partners}
+                end={500}
+                suffix="+"
+                label="Partners"
               />
+              <ImageOverlayCard imgSrc={States} end={8} label="States" />
             </div>
-          </div>
-          <div className="flex w-full m-auto align-center justify-center gap-4 mt-10">
-            <ImageOverlayCard
-              imgSrc={Acres}
-              end={100000}
-              suffix="+"
-              label="Acres"
-            />
-            <ImageOverlayCard
-              imgSrc={Partners}
-              end={500}
-              suffix="+"
-              label="Partners"
-            />
-            <ImageOverlayCard imgSrc={States} end={8} label="States" />
           </div>
         </div>
 
