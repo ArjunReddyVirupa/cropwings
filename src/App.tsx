@@ -8,7 +8,7 @@ import linkedInIcon from "./assets/LinkedIn.svg";
 import DownloadIcons from "./DownloadIcons";
 import MobilePhone from "./assets/MobilePhone.svg";
 import QR from "./assets/QR.webp";
-import CWIntro from "/CW Intro.mp4";
+import CWIntro from "/Intro.mp4";
 import {
   CropwingsStar,
   Farmer,
