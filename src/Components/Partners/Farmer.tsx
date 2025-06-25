@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import FarmerImg from "../../assets/FarmerImg.png";
+import FarmerImg from "../../assets/FarmerImg.webp";
 
 export default function Farmer() {
   return (

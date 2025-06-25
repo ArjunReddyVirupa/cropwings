@@ -1,12 +1,12 @@
 import useDeviceType from "../../Hooks/useDeviceType";
-import first from "../../assets/1.png";
-import second from "../../assets/2.png";
-import third from "../../assets/3.png";
-import fourth from "../../assets/4.png";
-import fifth from "../../assets/5.png";
-import sixth from "../../assets/6.png";
-import seventh from "../../assets/7.png";
-import eigth from "../../assets/8.png";
+import first from "../../assets/1.webp";
+import second from "../../assets/2.webp";
+import third from "../../assets/3.webp";
+import fourth from "../../assets/4.webp";
+import fifth from "../../assets/5.webp";
+import sixth from "../../assets/6.webp";
+import seventh from "../../assets/7.webp";
+import eigth from "../../assets/8.webp";
 
 const AppScreenshots = () => {
   const { isMobile } = useDeviceType();
@@ -47,7 +47,12 @@ const AppScreenshots = () => {
         ))}
       </div>
       {isMobile && (
-        <button className="mt-[40px] m-auto w-[90vw] whitespace-pre-line rounded-xl bg-[#106d20] px-5 py-3 text-base text-white">
+        <button
+          onClick={() => {
+            window.open("https://app.cropwings.com/qr", "_blank");
+          }}
+          className="mt-[40px] m-auto w-[90vw] whitespace-pre-line rounded-xl bg-[#106d20] px-5 py-3 text-base text-white"
+        >
           Book Now
         </button>
       )}

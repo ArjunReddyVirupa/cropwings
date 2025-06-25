@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import PilotImg from "../../assets/Pilot.png";
+import PilotImg from "../../assets/Pilot.webp";
 
 export default function Partner() {
   return (
@@ -25,12 +25,12 @@ export default function Partner() {
           }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <ul className="text-left text-lg space-y-2">
+          <ul className="text-left  font-normal space-y-2">
             <li>Broaden your offerings and maximize revenue opportunities</li>
             <li>Unlock more income with additional service offerings</li>
           </ul>
-          <div className="font-semibold pt-2">Pilot</div>
-          <ul className="text-left text-lg space-y-2">
+          <div className="font-bold pt-2">Pilot</div>
+          <ul className="text-left font-normal space-y-2">
             <li>Receive local orders with ease</li>
             <li>Boost your spraying productivity</li>
             <li>Unlock extra income opportunities</li>

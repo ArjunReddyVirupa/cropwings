@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import Retailer from "../../assets/Retailer.png";
+import Retailer from "../../assets/Retailer.webp";
 
 export default function Retail() {
   return (
     <>
       <div className="text-center text-4xl text-bold pt-8">For Retail</div>
-      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-8 py-8 mt-4 mb-4 sm:mt-0 sm:mb-0">
+      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-8 py-8 mb-4 sm:mt-0 sm:mb-0">
         <motion.img
           src={Retailer}
           alt="drone-service"
@@ -25,16 +25,16 @@ export default function Retail() {
           }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <ul className="text-left text-lg space-y-2">
-            <li>Broaden your offerings and maximize revenue opportunities</li>
+          <ul className="text-left font-normal space-y-2">
+            <li>Offer Additional services to farmers</li>
             <li>Unlock more income with additional service offerings</li>
           </ul>
-          <div className="font-semibold pt-2">Pilot</div>
-          <ul className="text-left text-lg space-y-2">
-            <li>Receive local orders with ease</li>
-            <li>Boost your spraying productivity</li>
-            <li>Unlock extra income opportunities</li>
-            <li>Maximize daily spray coverage</li>
+          <br />
+          <div className="font-bold pt-2">Multiple Income opportunities</div>
+          <br />
+          <ul className="text-left font-normal space-y-2">
+            <li>Be a CropWings official partner in your area</li>
+            <li>Sell drone specific pesticides in your area</li>
           </ul>
         </motion.div>
       </div>

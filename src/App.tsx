@@ -7,8 +7,8 @@ import youtubeIcon from "./assets/Youtube.svg";
 import linkedInIcon from "./assets/LinkedIn.svg";
 import DownloadIcons from "./DownloadIcons";
 import MobilePhone from "./assets/MobilePhone.svg";
-import QR from "./assets/QR.png";
-import CWIntro from "./assets/CW Intro.mp4";
+import QR from "./assets/QR.webp";
+import CWIntro from "/CW Intro.mp4";
 import {
   CropwingsStar,
   Farmer,
@@ -17,19 +17,22 @@ import {
   Retail,
   Team,
 } from "./Components";
-import States from "./assets/States.png";
-import Acres from "./assets/Acres.png";
-import Partners from "./assets/Partners.png";
+import States from "./assets/States.webp";
+import Acres from "./assets/Acres.webp";
+import Partners from "./assets/Partners.webp";
 import AppScreenshots from "./Components/AppScreenshots";
 
 export default function App() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.1 });
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   useEffect(() => {
-    const video = document.querySelector("video");
+    const video = videoRef.current;
+
     if (video) {
       video.play().catch((err) => {
-        console.warn("Autoplay failed:", err);
+        console.warn("Autoplay was blocked:", err);
       });
     }
   }, []);
@@ -62,13 +65,15 @@ export default function App() {
           <div className="relative  w-full transition-transform ease-linear will-change-transform ">
             <div className="relative overflow-hidden">
               <video
+                ref={videoRef}
                 src={CWIntro}
                 className="object-cover transition-opacity duration-400 overflow-clip pointer-events-none aspect-[1125/1494] w-full opacity-100"
                 autoPlay
                 loop
+                controls={false}
                 playsInline
                 muted
-                preload="metadata"
+                preload="auto"
                 style={{ overflowClipMargin: "content-box" }}
               ></video>
             </div>
@@ -170,7 +175,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="relative bg-black after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-black sm:hidden">
+        <div className="relative bg-[#106d20] after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-[#106d20] sm:hidden">
           <footer className="px-5 pt-4   text-white lg:mx-auto lg:max-w-[834px] xl:max-w-[949px] lg:pt-20 ">
             <div className="flex w-full items-center justify-start py-6 ">
               <img
@@ -186,7 +191,7 @@ export default function App() {
                   <h4 className="mb-[10px] font-normal text-zGrey200 text-sm lg:text-lg">
                     Partner with us
                   </h4>
-                  <div className="flex w-full flex-col items-start justify-start gap-2 text-xs lg:text-base">
+                  <div className="flex w-full flex-col items-start text-white justify-start gap-2 text-xs lg:text-base">
                     <div className="hover:text-zSlate300">
                       <a
                         href="https://www.zomato.com/"
@@ -220,7 +225,7 @@ export default function App() {
                   <h4 className="mb-[10px] font-normal text-zGrey200 text-sm lg:text-lg">
                     Learn More
                   </h4>
-                  <div className="flex w-full flex-col items-start justify-start gap-2 text-xs lg:text-base">
+                  <div className="flex w-full flex-col items-start text-white justify-start gap-2 text-xs lg:text-base">
                     <div className="hover:text-zSlate300">
                       <a
                         href="https://app.cropwings.com/privacypolicy"
@@ -324,7 +329,7 @@ export default function App() {
               <h1 className="text-heading mb-5 px-5 text-center font-semibold">
                 India’s #1
                 <br />
-                for crop protection services
+                app for crop protection services
               </h1>
             </div>
             <div className="m-8 flex w-full flex-col justify-center xl:mt-12">
@@ -513,7 +518,7 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="relative bg-black after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-black">
+        <div className="relative bg-[#106d20] after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-[#106d20]">
           <footer className="px-5 pt-4   text-white lg:mx-auto lg:max-w-[834px] xl:max-w-[949px] lg:pt-20 ">
             <div className="flex w-full items-center justify-start py-6 ">
               <img
@@ -529,12 +534,12 @@ export default function App() {
                   <h4 className="mb-[10px] font-normal text-zGrey200 text-sm lg:text-lg">
                     Partner with us
                   </h4>
-                  <div className="flex w-full flex-col items-start justify-start gap-2 text-xs lg:text-base">
+                  <div className="flex w-full flex-col items-start justify-start gap-2 lg:text-base text-white">
                     <div className="">
                       <a
                         href="https://www.zomato.com/"
                         target="_blank"
-                        className="hover:text-white hover:no-underline"
+                        className="hover:text-white hover:no-underline text-[14px]"
                       >
                         For Corporate
                       </a>
@@ -543,7 +548,7 @@ export default function App() {
                       <a
                         href="https://app.cropwings.com/onboarding/partner/01"
                         target="_blank"
-                        className="hover:text-white hover:no-underline"
+                        className="hover:text-white hover:no-underline text-[14px]"
                       >
                         For Pilots
                       </a>
@@ -552,14 +557,14 @@ export default function App() {
                       <a
                         href="https://app.cropwings.com/onboarding/partner/01"
                         target="_blank"
-                        className="hover:text-white hover:no-underline"
+                        className="hover:text-white hover:no-underline text-[14px]"
                       >
                         For Retailers
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="max-w-52 h-fit order-2 lg:order-4">
+                <div className="max-w-52 h-fit order-2 lg:order-4 text-white">
                   <h4 className="mb-[10px] font-normal text-zGrey200 text-sm lg:text-lg">
                     Learn More
                   </h4>
@@ -568,7 +573,7 @@ export default function App() {
                       <a
                         href="https://app.cropwings.com/privacypolicy"
                         target="_blank"
-                        className="hover:text-white hover:no-underline"
+                        className="hover:text-white hover:no-underline text-[14px]"
                       >
                         Privacy and Policies
                       </a>
@@ -577,7 +582,7 @@ export default function App() {
                       <a
                         href="https://app.cropwings.com/tos"
                         target="_blank"
-                        className="hover:text-white hover:no-underline"
+                        className="hover:text-white hover:no-underline text-[14px]"
                       >
                         Terms & Conditions
                       </a>
@@ -586,7 +591,7 @@ export default function App() {
                       <a
                         href="https://www.zomato.com/contact"
                         target="_blank"
-                        className="hover:text-white hover:no-underline"
+                        className="hover:text-white hover:no-underline text-[14px]"
                       >
                         Help &amp; Support
                       </a>
