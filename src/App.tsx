@@ -443,12 +443,11 @@ export default function App() {
             visible: { transition: { staggerChildren: 0.3 } },
             hidden: {},
           }}
-          className="relative px-4 pt-8 pb-20 mt-4 xl:mt-8 xl:pt-8 2xl:pt-20 2xl:mt-12 flex w-full flex-col items-center gap-16"
+          className="relative px-4 pt-8 pb-20 mt-4 xl:mt-8 xl:pt-8 2xl:pt-20 2xl:mt-12 flex w-full flex-col items-center gap-6"
         >
           <div
             style={{
               borderRadius: "45px",
-              // padding: "20px",
               background:
                 "linear-gradient(rgb(213, 232, 206) 0%, rgb(16, 109, 32) 100%)",
             }}
@@ -456,7 +455,7 @@ export default function App() {
             <div
               style={{
                 borderRadius: "40px",
-                margin: "8px",
+                margin: "4px",
                 background:
                   "linear-gradient(80deg, rgb(255, 255, 255) 0%, rgb(213, 232, 206) 100%)",
               }}
@@ -476,7 +475,8 @@ export default function App() {
               <div
                 style={{
                   borderRadius: "40px",
-                  margin: "8px",
+                  margin: "4px",
+                  height: "97%",
                   background:
                     "linear-gradient(89deg, rgb(213, 232, 206) 0%, rgb(255, 255, 255) 50%)",
                 }}
@@ -494,7 +494,8 @@ export default function App() {
               <div
                 style={{
                   borderRadius: "40px",
-                  margin: "8px",
+                  margin: "4px",
+                  height: "97%",
                   background:
                     "linear-gradient(89deg, rgb(213, 232, 206) 0%, rgb(255, 255, 255) 50%)",
                 }}

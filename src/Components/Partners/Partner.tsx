@@ -4,8 +4,8 @@ import PilotImg from "../../assets/Pilot.webp";
 export default function Partner() {
   return (
     <>
-      <div className="text-center text-4xl text-bold pt-8">For Partner</div>
-      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-8 py-8 mt-4 mb-4 sm:mt-0 sm:mb-0">
+      <div className="text-center text-2xl text-bold pt-4">For Pilot</div>
+      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-4 py-2 mt-2 mb-4 sm:mt-0 sm:mb-0">
         <motion.img
           src={PilotImg}
           alt="drone-service"
@@ -25,18 +25,13 @@ export default function Partner() {
           }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <ul className="text-left  font-normal space-y-2">
-            <li>Broaden your offerings and maximize revenue opportunities</li>
-            <li>Unlock more income with additional service offerings</li>
-          </ul>
-          <div className="font-bold pt-2">Pilot</div>
-          <ul className="text-left font-normal space-y-2">
+          <ul className="text-left font-normal space-y-2 text-[14px]">
             <li>Receive local orders with ease</li>
             <li>Boost your spraying productivity</li>
             <li>Unlock extra income opportunities</li>
             <li>Maximize daily spray coverage</li>
           </ul>
-          <div className="mt-4 text-sm">
+          <div className="mt-10 text-[12px]">
             See how you can earn more, work smarter, and take on more local
             orders—watch the video to learn how it all works.
             <span

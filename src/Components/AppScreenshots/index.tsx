@@ -39,8 +39,8 @@ const AppScreenshots = () => {
           <img
             key={image}
             src={image}
-            width={isMobile ? 250 : 320}
-            height={isMobile ? 250 : 320}
+            width={isMobile ? 250 : 300}
+            height={isMobile ? 250 : 300}
             alt=""
             style={{ borderRadius: 8 }}
           />

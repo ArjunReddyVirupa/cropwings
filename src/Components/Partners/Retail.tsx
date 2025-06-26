@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
 import Retailer from "../../assets/Retailer.webp";
-import useDeviceType from "../../Hooks/useDeviceType";
 
 export default function Retail() {
-  const { isMobile } = useDeviceType();
   return (
     <>
-      <div className="text-center text-4xl text-bold pt-8">For Retail</div>
-      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-8 py-8 mb-4 sm:mt-0 sm:mb-0">
+      <div className="text-center text-2xl text-bold pt-4">For Retailer</div>
+      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-4 py-2 mt-2 mb-4 sm:mt-0 sm:mb-0">
         <motion.img
           src={Retailer}
           alt="drone-service"
@@ -27,21 +25,17 @@ export default function Retail() {
           }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <ul className="text-left font-normal space-y-2">
+          <ul className="text-left font-normal space-y-2 text-[14px]">
             <li>Offer Additional services to farmers</li>
-            <li>Unlock more income with additional service offerings</li>
           </ul>
-          <br />
-          <div className="font-bold pt-2">Multiple Income opportunities</div>
-          <br />
-          <ul className="text-left font-normal space-y-2">
+          <div className="font-bold pt-2 pb-2">
+            Multiple Income opportunities
+          </div>
+          <ul className="text-left font-normal space-y-2 text-[14px]">
             <li>Be a CropWings official partner in your area</li>
             <li>Sell drone specific pesticides in your area</li>
           </ul>
-          <div
-            className="text-sm"
-            style={{ marginTop: isMobile ? "1rem" : "3rem" }}
-          >
+          <div className="text-[12px] mt-4">
             See how partnering with CropWings helps you offer more, sell more,
             and earn more. Watch the video to get started.
             <span
