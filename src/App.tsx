@@ -5,6 +5,8 @@ import { motion, useInView } from "framer-motion";
 import InstaIcon from "./assets/Instagram.svg";
 import youtubeIcon from "./assets/Youtube.svg";
 import linkedInIcon from "./assets/LinkedIn.svg";
+import EmailIcon from "./assets/Email.svg";
+import LocationIcon from "./assets/Location.svg";
 import DownloadIcons from "./DownloadIcons";
 import MobilePhone from "./assets/MobilePhone.svg";
 import QR from "./assets/QR.webp";
@@ -39,27 +41,6 @@ export default function App() {
 
   return (
     <div className="flex flex-col items-center justify-center font-our-lexend">
-      <div className="fixed bottom-5 z-[200] w-[98vw] transition-all duration-300 ease-in-out translate-y-full opacity-0">
-        <div className="sticky bottom-5 flex justify-between rounded-2xl border border-zSlate600 bg-black p-3 sm:hidden">
-          <div className="flex items-center">
-            <img
-              src="https://b.zmtcdn.com/images/square_zomato_logo_new.svg"
-              className="size-10 rounded-xl"
-              loading="lazy"
-            />
-            <div className="px-3 text-[13px] leading-5 font-normal text-white">
-              Online ordering and
-              <br />
-              much more on the app
-            </div>
-          </div>
-          <button className="w-max rounded-3xl bg-white px-4 text-center text-xs font-semibold text-zRed500">
-            <a href="https://zomato.onelink.me/xqzv/2c9wu3p8" target="_blank">
-              Order on app
-            </a>
-          </button>
-        </div>
-      </div>
       <div className="sticky h-fit w-full snap-start top-0 before:absolute before:-bottom-12 before:left-0 before:h-12 before:w-full before:bg-zCoal sm:hidden">
         <div className="relative grid h-[--app-height] max-h-[900px] min-h-[--app-height]  grid-cols-1 grid-rows-2 opacity-100 transition-opacity duration-300 will-change-[opacity]">
           <div className="relative  w-full transition-transform ease-linear will-change-transform ">
@@ -274,25 +255,72 @@ export default function App() {
                       target="_blank"
                       className=""
                     >
-                      <img src={linkedInIcon} alt="Instagram" />
+                      <img src={linkedInIcon} alt="LinkedIn" loading="eager" />
                     </a>
                     <a
                       href="https://www.instagram.com/cropwings?igsh=MWs3Zms4c2FjNmNudg=="
                       target="_blank"
                       className=""
                     >
-                      <img src={InstaIcon} alt="Instagram" />
+                      <img src={InstaIcon} alt="Instagram" loading="eager" />
                     </a>
                     <a
                       href="https://www.youtube.com/@cropwingsnetwork"
                       target="_blank"
                       className=""
                     >
-                      <img src={youtubeIcon} alt="Instagram" />
+                      <img src={youtubeIcon} alt="Youtube" loading="eager" />
                     </a>
                   </div>
                   <div className="flex flex-col gap-2">
                     <DownloadIcons />
+                  </div>
+                </div>
+                <div className="order-3 h-fit lg:order-5">
+                  <h4 className=" mb-[10px] text-sm font-medium text-zGrey200 lg:text-lg">
+                    Get in touch
+                  </h4>
+                  <div className="inline-flex gap-1">
+                    <a
+                      href="mailto:connect@cropwings.com"
+                      target="_blank"
+                      className="flex items-end text-center gap-2"
+                    >
+                      <img
+                        src={EmailIcon}
+                        alt="email"
+                        loading="lazy"
+                        width={18}
+                        height={18}
+                      />
+                      <div className="text-[14px] text-white">
+                        connect@cropwings.com
+                      </div>
+                    </a>
+                  </div>
+                  <div className="inline-flex gap-1 mt-4">
+                    <div
+                      onClick={() => {
+                        const address = "CropWings Technologies Pvt Ltd";
+                        const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                          address
+                        )}`;
+                        window.open(mapUrl, "_blank");
+                      }}
+                      className="flex items-start text-center gap-2 cursor-pointer"
+                    >
+                      <img
+                        src={LocationIcon}
+                        alt="location"
+                        loading="lazy"
+                        width={18}
+                        height={18}
+                      />
+                      <div className="text-[14px] text-white text-justify">
+                        Ten Madhapur, 4A, Road, HUDA Techno Enclave, HITEC City,
+                        Hyderabad, Telangana 500081
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -617,25 +645,72 @@ export default function App() {
                       target="_blank"
                       className=""
                     >
-                      <img src={linkedInIcon} alt="Instagram" />
+                      <img src={linkedInIcon} alt="LinkedIn" loading="eager" />
                     </a>
                     <a
                       href="https://www.instagram.com/cropwings?igsh=MWs3Zms4c2FjNmNudg=="
                       target="_blank"
                       className=""
                     >
-                      <img src={InstaIcon} alt="Instagram" />
+                      <img src={InstaIcon} alt="Instagram" loading="eager" />
                     </a>
                     <a
                       href="https://www.youtube.com/@cropwingsnetwork"
                       target="_blank"
                       className=""
                     >
-                      <img src={youtubeIcon} alt="Instagram" />
+                      <img src={youtubeIcon} alt="Youtube" loading="eager" />
                     </a>
                   </div>
                   <div className="mb-10 flex flex-col w-max gap-2">
                     <DownloadIcons />
+                  </div>
+                </div>
+                <div className="order-3 h-fit lg:order-5">
+                  <h4 className="mb-[10px] text-sm font-medium text-zGrey200 lg:text-lg">
+                    Get in touch
+                  </h4>
+                  <div className="inline-flex gap-1">
+                    <a
+                      href="mailto:connect@cropwings.com"
+                      target="_blank"
+                      className="flex items-end text-center gap-2"
+                    >
+                      <img
+                        src={EmailIcon}
+                        alt="email"
+                        loading="lazy"
+                        width={18}
+                        height={18}
+                      />
+                      <div className="text-[14px] text-white">
+                        connect@cropwings.com
+                      </div>
+                    </a>
+                  </div>
+                  <div className="inline-flex gap-1 mt-4">
+                    <div
+                      onClick={() => {
+                        const address = "CropWings Technologies Pvt Ltd";
+                        const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                          address
+                        )}`;
+                        window.open(mapUrl, "_blank");
+                      }}
+                      className="flex items-start text-center gap-2 cursor-pointer"
+                    >
+                      <img
+                        src={LocationIcon}
+                        alt="location"
+                        loading="lazy"
+                        width={18}
+                        height={18}
+                      />
+                      <div className="text-[14px] text-white text-justify">
+                        Ten Madhapur, 4A, Road, HUDA Techno Enclave, HITEC City,
+                        Hyderabad, Telangana 500081
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
