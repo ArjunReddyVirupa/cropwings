@@ -39,7 +39,7 @@ export default function Retail() {
             See how partnering with CropWings helps you offer more, sell more,
             and earn more. Watch the video to get started.
             <span
-              className="text-[#106d20] ml-2"
+              className="text-[#106d20] ml-1 font-bold"
               onClick={() => {
                 window.open(
                   "https://youtube.com/shorts/QyX9drUqF3w?si=63JxGRtKir_m3ehU",

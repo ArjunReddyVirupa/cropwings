@@ -33,9 +33,9 @@ export default function Partner() {
           </ul>
           <div className="mt-10 text-[12px]">
             See how you can earn more, work smarter, and take on more local
-            orders—watch the video to learn how it all works.
+            orders. Watch the video to learn how it all works.
             <span
-              className="text-[#106d20] ml-2"
+              className="text-[#106d20] font-bold ml-[2px]"
               onClick={() => {
                 window.open(
                   "https://youtube.com/shorts/dlGO5A_YHgk?si=4a3ULMWgg-rjVx4P",
