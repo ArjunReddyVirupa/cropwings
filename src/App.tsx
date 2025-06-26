@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import InstaIcon from "./assets/Instagram.svg";
 import youtubeIcon from "./assets/Youtube.svg";
 import linkedInIcon from "./assets/LinkedIn.svg";
+import FacebookIcon from "./assets/Facebook.svg";
 import EmailIcon from "./assets/Email.svg";
 import LocationIcon from "./assets/Location.svg";
 import DownloadIcons from "./DownloadIcons";
@@ -255,21 +256,52 @@ export default function App() {
                       target="_blank"
                       className=""
                     >
-                      <img src={linkedInIcon} alt="LinkedIn" loading="eager" />
+                      <img
+                        src={linkedInIcon}
+                        alt="LinkedIn"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
                     </a>
                     <a
                       href="https://www.instagram.com/cropwings?igsh=MWs3Zms4c2FjNmNudg=="
                       target="_blank"
                       className=""
                     >
-                      <img src={InstaIcon} alt="Instagram" loading="eager" />
+                      <img
+                        src={InstaIcon}
+                        alt="Instagram"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/p/Cropwings-100083301862641/"
+                      target="_blank"
+                      className=""
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="Facebook"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
                     </a>
                     <a
                       href="https://www.youtube.com/@cropwingsnetwork"
                       target="_blank"
                       className=""
                     >
-                      <img src={youtubeIcon} alt="Youtube" loading="eager" />
+                      <img
+                        src={youtubeIcon}
+                        alt="Youtube"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
                     </a>
                   </div>
                   <div className="flex flex-col gap-2">
@@ -636,7 +668,7 @@ export default function App() {
                   </div>
                 </div>
                 <div className="order-3 h-fit lg:order-5">
-                  <h4 className=" mb-[10px] text-sm font-medium text-zGrey200 lg:text-lg">
+                  <h4 className="mb-[10px] text-sm font-medium text-zGrey200 lg:text-lg">
                     Social Links
                   </h4>
                   <div className="inline-flex gap-1">
@@ -645,21 +677,52 @@ export default function App() {
                       target="_blank"
                       className=""
                     >
-                      <img src={linkedInIcon} alt="LinkedIn" loading="eager" />
+                      <img
+                        src={linkedInIcon}
+                        alt="LinkedIn"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
                     </a>
                     <a
                       href="https://www.instagram.com/cropwings?igsh=MWs3Zms4c2FjNmNudg=="
                       target="_blank"
                       className=""
                     >
-                      <img src={InstaIcon} alt="Instagram" loading="eager" />
+                      <img
+                        src={InstaIcon}
+                        alt="Instagram"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/p/Cropwings-100083301862641/"
+                      target="_blank"
+                      className=""
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="Facebook"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
                     </a>
                     <a
                       href="https://www.youtube.com/@cropwingsnetwork"
                       target="_blank"
                       className=""
                     >
-                      <img src={youtubeIcon} alt="Youtube" loading="eager" />
+                      <img
+                        src={youtubeIcon}
+                        alt="Youtube"
+                        loading="eager"
+                        width={36}
+                        height={36}
+                      />
                     </a>
                   </div>
                   <div className="mb-10 flex flex-col w-max gap-2">

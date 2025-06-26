@@ -36,6 +36,21 @@ export default function Partner() {
             <li>Unlock extra income opportunities</li>
             <li>Maximize daily spray coverage</li>
           </ul>
+          <div className="mt-4 text-sm">
+            See how you can earn more, work smarter, and take on more local
+            orders—watch the video to learn how it all works.
+            <span
+              className="text-[#106d20] ml-2"
+              onClick={() => {
+                window.open(
+                  "https://youtube.com/shorts/dlGO5A_YHgk?si=4a3ULMWgg-rjVx4P",
+                  "_blank"
+                );
+              }}
+            >
+              Click Here
+            </span>
+          </div>
         </motion.div>
       </div>
     </>

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import Retailer from "../../assets/Retailer.webp";
+import useDeviceType from "../../Hooks/useDeviceType";
 
 export default function Retail() {
+  const { isMobile } = useDeviceType();
   return (
     <>
       <div className="text-center text-4xl text-bold pt-8">For Retail</div>
@@ -36,6 +38,24 @@ export default function Retail() {
             <li>Be a CropWings official partner in your area</li>
             <li>Sell drone specific pesticides in your area</li>
           </ul>
+          <div
+            className="text-sm"
+            style={{ marginTop: isMobile ? "1rem" : "3rem" }}
+          >
+            See how partnering with CropWings helps you offer more, sell more,
+            and earn more. Watch the video to get started.
+            <span
+              className="text-[#106d20] ml-2"
+              onClick={() => {
+                window.open(
+                  "https://youtube.com/shorts/QyX9drUqF3w?si=63JxGRtKir_m3ehU",
+                  "_blank"
+                );
+              }}
+            >
+              Click Here
+            </span>
+          </div>
         </motion.div>
       </div>
     </>
