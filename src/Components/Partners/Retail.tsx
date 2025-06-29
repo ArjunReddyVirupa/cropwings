@@ -5,7 +5,7 @@ export default function Retail() {
   return (
     <>
       <div className="text-center text-2xl text-bold pt-4">For Retailer</div>
-      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-4 py-2 mt-2 mb-4 sm:mt-0 sm:mb-0">
+      <div className="grid grid-flow-row sm:grid-flow-col items-center gap-16 justify-center px-4 mt-2 mb-4 sm:mt-0 sm:mb-0">
         <motion.img
           src={Retailer}
           alt="drone-service"
@@ -27,11 +27,7 @@ export default function Retail() {
         >
           <ul className="text-left font-normal space-y-2 text-[14px]">
             <li>Offer Additional services to farmers</li>
-          </ul>
-          <div className="font-bold pt-2 pb-2">
-            Multiple Income opportunities
-          </div>
-          <ul className="text-left font-normal space-y-2 text-[14px]">
+            <li>Multiple income oppertunities</li>
             <li>Be a CropWings official partner in your area</li>
             <li>Sell drone specific pesticides in your area</li>
           </ul>
@@ -39,7 +35,7 @@ export default function Retail() {
             See how partnering with CropWings helps you offer more, sell more,
             and earn more. Watch the video to get started.
             <span
-              className="text-[#106d20] ml-1 font-bold"
+              className="text-[#106d20] ml-1 font-bold cursor-pointer"
               onClick={() => {
                 window.open(
                   "https://youtube.com/shorts/QyX9drUqF3w?si=63JxGRtKir_m3ehU",

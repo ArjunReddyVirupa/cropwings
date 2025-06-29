@@ -69,13 +69,12 @@ const ImageOverlayCard = ({
           ref={ref}
           className="md:w-[30%] w-full rounded-xl overflow-hidden shadow-lg mb-[4px] relative"
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-          <div className="flex flex-col justify-end p-2 z-10">
-            <h2 className="text-2xl font-bold text-center">
+          <div className="flex flex-col justify-end p-2 z-10 bg-black">
+            <h2 className="text-2xl font-bold text-white text-center">
               {count.toLocaleString()}
               {suffix}
             </h2>
-            <p className="text-xl mt-1 text-center">{label}</p>
+            <p className="text-xl mt-1 text-center text-white">{label}</p>
           </div>
         </div>
       )}

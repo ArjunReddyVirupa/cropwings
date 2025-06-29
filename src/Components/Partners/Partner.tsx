@@ -5,7 +5,7 @@ export default function Partner() {
   return (
     <>
       <div className="text-center text-2xl text-bold pt-4">For Pilot</div>
-      <div className="grid grid-flow-row sm:grid-flow-col gap-4 items-center justify-center px-4 py-2 mt-2 mb-4 sm:mt-0 sm:mb-0">
+      <div className="grid grid-flow-row sm:grid-flow-col items-center gap-16 justify-center px-4 mt-2 mb-4 sm:mt-0 sm:mb-0">
         <motion.img
           src={PilotImg}
           alt="drone-service"
@@ -35,7 +35,7 @@ export default function Partner() {
             See how you can earn more, work smarter, and take on more local
             orders. Watch the video to learn how it all works.
             <span
-              className="text-[#106d20] font-bold ml-[2px]"
+              className="text-[#106d20] font-bold ml-[2px] cursor-pointer"
               onClick={() => {
                 window.open(
                   "https://youtube.com/shorts/dlGO5A_YHgk?si=4a3ULMWgg-rjVx4P",

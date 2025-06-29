@@ -162,7 +162,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="relative bg-[#106d20] after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-[#106d20] sm:hidden">
+          <div className="relative bg-black after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-black sm:hidden">
             <footer className="px-5 pt-4   text-white lg:mx-auto lg:max-w-[834px] xl:max-w-[949px] lg:pt-20 ">
               <div className="flex w-full items-center justify-start py-6 ">
                 <img
@@ -182,7 +182,7 @@ export default function App() {
                       <div className="hover:text-zSlate300">
                         <div
                           onClick={() => setShowPopup(true)}
-                          className="hover:text-white hover:no-underline text-[14px]"
+                          className="hover:text-white hover:no-underline text-[14px] cursor-pointer"
                         >
                           For Corporate
                         </div>
@@ -352,9 +352,8 @@ export default function App() {
                           width={18}
                           height={18}
                         />
-                        <div className="text-[14px] text-white text-justify">
-                          Ten Madhapur, 4A, Road, HUDA Techno Enclave, HITEC
-                          City, Hyderabad, Telangana 500081
+                        <div className="text-[14px] text-white text-left">
+                          {`Ten Madhapur, 4A, Road, HUDA Techno Enclave,HITEC City, Hyderabad, Telangana 500081`}
                         </div>
                       </div>
                     </div>
@@ -588,7 +587,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="relative bg-[#106d20] after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-[#106d20]">
+          <div className="relative bg-black after:overscroll-y-contain after:absolute after:w-full after:h-20 after:-bottom-20 after:left-0 after:bg-black">
             <footer className="px-5 pt-4   text-white lg:mx-auto lg:max-w-[834px] xl:max-w-[949px] lg:pt-20 ">
               <div className="flex w-full items-center justify-start py-6 ">
                 <img
@@ -608,7 +607,7 @@ export default function App() {
                       <div className="">
                         <div
                           onClick={() => setShowPopup(true)}
-                          className="hover:text-white hover:no-underline text-[14px]"
+                          className="hover:text-white hover:no-underline text-[14px] cursor-pointer"
                         >
                           For Corporate
                         </div>
@@ -778,9 +777,8 @@ export default function App() {
                           width={18}
                           height={18}
                         />
-                        <div className="text-[14px] text-white text-justify">
-                          Ten Madhapur, 4A, Road, HUDA Techno Enclave, HITEC
-                          City, Hyderabad, Telangana 500081
+                        <div className="text-[14px] text-white text-left">
+                          {`Ten Madhapur, 4A, Road, HUDA Techno Enclave,HITEC City, Hyderabad, Telangana 500081`}
                         </div>
                       </div>
                     </div>
